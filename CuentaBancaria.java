@@ -1,6 +1,6 @@
 class TestCuentaBancaria
 {
-	int TipoIntereses=5;
+	double TipoIntereses=5;
 
 	public static void main(String args[])
 	{
@@ -8,6 +8,10 @@ class TestCuentaBancaria
 		System.out.println("Saldo = " + cuenta.getSaldo());
 		cuenta.reintegro(50);
 		cuenta.ingreso(100);
+		
+		saldo*=TipoIntereses;
+
 		System.out.println("Saldo: " + cuenta.getSaldo());
+		
 	}
 }
