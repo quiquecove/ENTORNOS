@@ -14,7 +14,7 @@ class TestCuentaBancaria
 	{
 		CuentaBancaria cuenta = new CuentaBancaria("1234521","Director Banco",100,0);
 		
-		//secundaria
+		//secundaria master
 		CuantaBancaria cuenta2= new CuentaBancaria("0123456789","Quique Huerta",1000,5);
 
 		System.out.println("Saldo = " + cuenta.getSaldo());
