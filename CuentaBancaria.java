@@ -1,12 +1,20 @@
 class TestCuentaBancaria
 {
-	double TipoIntereses=5;
+	static double TipoIntereses=5;
+
+	public double getTipoIntereses() {
+		return TipoIntereses;
+	}
+
+	public void setTipoIntereses(double tipoIntereses) {
+		TipoIntereses = tipoIntereses;
+	}
 
 	public static void main(String args[])
 	{
 		CuentaBancaria cuenta = new CuentaBancaria("1234521","Director Banco",100,0);
 		
-		//master
+		//secundaria
 		CuantaBancaria cuenta2= new CuentaBancaria("0123456789","Quique Huerta",1000,5);
 
 		System.out.println("Saldo = " + cuenta.getSaldo());
