@@ -1,6 +1,14 @@
 class TestCuentaBancaria
 {
-	double TipoIntereses=5;
+	static double TipoIntereses=5;
+
+	public double getTipoIntereses() {
+		return TipoIntereses;
+	}
+
+	public void setTipoIntereses(double tipoIntereses) {
+		TipoIntereses = tipoIntereses;
+	}
 
 	public static void main(String args[])
 	{
